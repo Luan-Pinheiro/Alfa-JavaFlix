@@ -5,7 +5,7 @@ import java.util.List;
 public class Filme extends Titulo {
     private double duracaoEmSegs;
 
-    public Filme(String nome, float nota,List<String> genero,String lancamento, String sinopse, String imagem){
+    public Filme(String nome, float nota,List genero,String lancamento, String sinopse, String imagem){
         super(nome,nota,genero,lancamento,sinopse, imagem);
     }
 

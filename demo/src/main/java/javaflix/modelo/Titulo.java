@@ -10,11 +10,11 @@ public class Titulo implements Serializable {
     private String lancamento;
     private String sinopse;
     private String imagem;
-    private List<String> genero;
+    private List genero;
 
     
     
-    public Titulo(String nome, float nota, List<String> genero, String lancamento, String sinopse, String imagem){
+    public Titulo(String nome, float nota, List genero, String lancamento, String sinopse, String imagem){
         this.codigo = ++contador;
         this.nome = nome;
         this.nota = nota;
@@ -45,7 +45,7 @@ public class Titulo implements Serializable {
     public String getSinopse() {
         return sinopse;
     }
-    public List<String>getGenero(){
+    public List getGenero(){
         return genero;
     }
     @Override
@@ -67,7 +67,7 @@ public class Titulo implements Serializable {
     public void setSinopse(String sinopse) {
         this.sinopse = sinopse;
     }
-    public void setGenero(List<String> genero){
+    public void setGenero(List genero){
         this.genero = genero;
     }
 

@@ -104,7 +104,7 @@ public class controllerMenuScreen implements Initializable {
         /*TmdbMovies movies = new TmdbApi("79f8ad578459c24567ff304e079010d9").getMovies();
         //String teste = "https://image.tmdb.org/t/p/w200/oR4Hzc17SqjfPzKbR8Qcy5QxZJF.jpg";
         String baseURL = "https://image.tmdb.org/t/p/w200";
-        for(int i = 10000; i < 10050; i++){
+        for(int i = 10004; i < 10033; i++){
             MovieDb movie = movies.getMovie(i, "pt-br", MovieMethod.images);
             String titulo = movie.getTitle(); //titulo
             float nota = movie.getVoteAverage(); // nota
