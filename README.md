@@ -1,10 +1,11 @@
 # JavaFlix
 
-Uma aplicação feita na linguagem java, utilizando ferramentas do javaFX e SceneBuilder. Projeto elaborado como avaliação parcial da disciplina de Algoritmos e Programação 2 - (AP2), da Universidade Estadual do Sudoeste da Bahia (UESB). 
+Uma aplicação feita na linguagem java, utilizando ferramentas do javaFX e SceneBuilder. Projeto elaborado como avaliação parcial da disciplina de Algoritmos e Programação 2 - (AP2), da Universidade Estadual do Sudoeste da Bahia (UESB). Aplicação desenvolvida em java 8. 
 
 
 ## Funcionalidades e Características
 
+- Requisição pra API
 - Cadastro de Filmes/Séries/Documentários
 - Inserção de análise e notas sobre os títulos
 - Visualização da aplicação com interface gráfica
