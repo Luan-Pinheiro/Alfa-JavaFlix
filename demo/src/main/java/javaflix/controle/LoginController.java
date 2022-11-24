@@ -35,19 +35,14 @@ public class LoginController {
     UserData UD = new UserData();
     @FXML
     void clickButtonStart(ActionEvent event) throws IOException {
-        ArrayList<User> userAAA = new ArrayList<>();
         
-        String user=userName.getText();
-        String password=passwordField.getText();
-        userAAA = UD.searchUser();
-        boolean aux = false;
-        for(int index=0;index<userAAA.size();index++){
-            if(user.equals(userAAA.get(index).getUsername())){
-                if(password.equals(userAAA.get(index).getSenha()))
-                    aux = true;
-            }
-        }
-        if(aux==false){
+        String user = userName.getText();
+        String password = passwordField.getText();
+        User u = new User(user, password);
+        ArrayList<User> userReadSU  = searchUser();
+        boolean aux = verifData(u, userReadSU);
+        
+        if(!(aux)){
             System.out.println("nao foi");
             FXMLLoader loader = new FXMLLoader(getClass().getResource("../visao/sucessoLoginFXML.fxml"));
             Parent root = loader.load();
@@ -64,6 +59,13 @@ public class LoginController {
     @FXML
     void cadastrar(ActionEvent event) {
         StartJavaFlix.changeScene("cadastre-se");
+    }
+
+    public boolean verifData(User user,ArrayList<User> userReadSU ){
+        return UD.verifData(user, userReadSU);
+    }
+    public ArrayList<User> searchUser(){
+        return UD.searchUser();
     }
 
 }
