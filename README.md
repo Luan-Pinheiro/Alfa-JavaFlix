@@ -25,6 +25,11 @@ Operação e estilazação através do javaFX e SceneBuilder . Manipulação de 
 - https://github.com/CarlosGilM
 - https://github.com/KaianS
 - https://github.com/Yago-0liveira
+
 ## 🚀 Sobre nós
 
 Estudantes de Ciência da Computação na Universidade Estadual do Sudoeste da Bahia (UESB).
+
+## Extra
+- Usuário: adm
+- Senha: adm
